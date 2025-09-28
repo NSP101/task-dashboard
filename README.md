@@ -50,6 +50,7 @@ Watch the working demo:
 1. Clone the repository:
 
 git clone https://github.com/NSP101/task-dashboard.git
+
 cd task-dashboard
 
 2. Install dependencies:
