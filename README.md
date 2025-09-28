@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# Task Management Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive Task Management Dashboard built with React.js featuring drag-and-drop
+functionality, task creation, editing, deletion, filtering, and local storage persistence.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Demo Video
 
-### `npm start`
+Watch the working demo:  
+[![Working Video](assets/working video(demo).webm)](assets/working video(demo).webm)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+or view on Google drive
+ https://drive.google.com/file/d/1YxBVIb8gkS8dKqRWTVh_mnRh1gmP_gDg/view?usp=sharing
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##  Screenshots
 
-### `npm run build`
+![Dashboard Screenshot 1](assets/working image.PNG)  
+![Dashboard Screenshot 2](assets/working image 2.PNG)  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+##  Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Create, edit, and delete tasks with categories and priorities  
+- Drag-and-drop tasks between statuses (`Todo`, `In Progress`, `Done`)  
+- Filter tasks by status, category, and priority  
+- Search tasks by title  
+- Local storage for data persistence (no backend required)  
+- Keyboard shortcut `Ctrl + N` to quickly add a new task  
+- Responsive and intuitive UI with toast notifications  
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Tech Stack
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- React.js  
+- JavaScript  
+- CSS  
+- LocalStorage  
+- react-beautiful-dnd  
+- react-toastify  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Setup Instructions
 
-## Learn More
+1. Clone the repository:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+git clone https://github.com/NSP101/task-dashboard.git
+cd task-dashboard
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Install dependencies:
 
-### Code Splitting
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+3. Start the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+ npm start
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+ #### Approach
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Used react-beautiful-dnd for drag-and-drop functionality.
 
-### Deployment
+Managed state with React hooks and persisted tasks using a custom useLocalStorage hook.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Implemented filtering, searching, and task sorting without any backend.
 
-### `npm run build` fails to minify
+Provided visual feedback using react-toastify for a better user experience.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Focused on clean and responsive UI for both desktop and mobile screens.
+
+
+#### Folder Structure
+
+task-dashboard/
+├── src/
+│   ├── components/
+│   │   ├── TaskCard.jsx
+│   │   └── TaskList.jsx
+│   ├── hooks/
+│   │   └── useLocalStorage.js
+│   └── App.jsx
+├── assets/
+│   ├── working image.PNG
+│   ├── working image 2.PNG
+│   └── working video(demo).webm
+├── package.json
+└── README.md
