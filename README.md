@@ -3,14 +3,13 @@
 A responsive Task Management Dashboard built with React.js featuring drag-and-drop
 functionality, task creation, editing, deletion, filtering, and local storage persistence.
 
----
+--- 
 
 ## Demo Video
 
-Watch the working demo:  
-[![Working Video](assets/working video(demo).webm)](assets/working video(demo).webm)
+Watch the working demo: 
+(view on Google drive)
 
-or view on Google drive
  https://drive.google.com/file/d/1YxBVIb8gkS8dKqRWTVh_mnRh1gmP_gDg/view?usp=sharing
 
 
@@ -62,7 +61,7 @@ npm install
 
  npm start
 
-
+-----
 
  #### Approach
 
@@ -93,3 +92,4 @@ task-dashboard/
 │   └── working video(demo).webm
 ├── package.json
 └── README.md
+
