@@ -49,18 +49,18 @@ Watch the working demo:
 
 1. Clone the repository:
 
-git clone https://github.com/NSP101/task-dashboard.git
+   git clone https://github.com/NSP101/task-dashboard.git
 
-cd task-dashboard
+   cd task-dashboard
 
 2. Install dependencies:
 
-npm install
+   npm install
 
 
 3. Start the development server:
 
- npm start
+   npm start
 
 -----
 
